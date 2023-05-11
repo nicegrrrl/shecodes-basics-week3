@@ -23,8 +23,8 @@
 
     .container {
       max-width: 800px;
-      height: 84vh;
-      max-height: 50%;
+      height: 86vh;
+      max-height: 60%;
       margin: 20px auto;
       background-color:#f7fad6;
       border-radius: 70% 20% /120px 40% 230px 200px;
@@ -51,6 +51,11 @@
       max-width: 100%;
       padding: 8px;
       border-radius: 20px;
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 10px
     }
 
     p {
@@ -85,7 +90,6 @@
       background-color: #e1e4bf;
     }
 
-
     footer {
       text-align: center;
       margin: 30px 20px 30px 20px;
@@ -99,6 +103,8 @@
 
     a {
       text-decoration: none;
+      border-bottom: 4px solid rgba(255,192,203, 0.3);
+      transition: all 200ms ease-in-out;
     }
 
     a:link, a:visited {
@@ -106,7 +112,8 @@
     }
 
     a:hover {
-      color: #82CD47;
+      border-bottom: 4px solid rgba(255,192,203, 0);
+      background-color: rgba(255,192,203, 0.3);
     }
 
     a:active {
@@ -115,6 +122,15 @@
 
     .iconFooter {
       color: #ff47a9;
+    }
+
+    #alana-maia {
+      border: none;
+    }
+
+    #alana-maia:hover {
+      background-color: transparent;
+      color: #82CD47;
     }
 
   </style>
@@ -127,7 +143,11 @@
     <h1>fuji x100v</h1>
     <h2>my new 📸 obsession</h2>
 
-    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/504/original/fujifilm-x100v.jpg?1683818760" alt="Fuji x100v Camera" width="600px">
+    <figure>
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/504/original/fujifilm-x100v.jpg?1683818760" alt="Fuji x100v Camera" width="600px">
+      <figcaption><em>credits</em>: photo by <a href="https://www.5050travelog.com/camera-and-lens-reviews/fujifilm-x100v-camera-review" target="_blank">5050travelog</a></figcaption>
+    </figure>
+    
 
     <p>The Fujifilm X100V (Roman Numeral "Fifth"), announced on February 4, 2020, is the successor to the Fujifilm X100F.[37] It features a redesigned lens, a fourth generation X-Trans sensor, a 2-way tilting rear LCD screen, and partial weather resistance.[b] The camera also includes additional film simulation modes and other software improvements.</p>
     <p id="link-wiki"><a href="https://en.wikipedia.org/wiki/Fujifilm_X100" target="_blank" alt="fuji x100v camera">Learn more on Wikipedia</a></p>
@@ -136,7 +156,7 @@
 
     <footer>
       <p>💻 coded by </p>
-      <div class="devAlana"><a href="https://github.com/nicegrrrl" target="_blank">Alana Maia</a></div>
+      <div class="devAlana"><a href="https://github.com/nicegrrrl" target="_blank" id="alana-maia">Alana Maia</a></div>
       <i class="fa-solid fa-code iconFooter"></i>
       <i class="fa-regular fa-face-laugh-wink iconFooter"></i>
     </footer>
@@ -156,5 +176,3 @@
 </body>
 
 </html>
-
-<!-- https://www.5050travelog.com/camera-and-lens-reviews/fujifilm-x100v-camera-review -->
