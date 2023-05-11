@@ -10,6 +10,11 @@
 
   <style>
 
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
     body {
 			font-family: "clone-rounded-latin", sans-serif;
 			font-weight: 400;
@@ -18,17 +23,25 @@
 
     .container {
       max-width: 800px;
-      margin: 0 auto;
-      padding: 30px 60px;
+      height: 84vh;
+      max-height: 50%;
+      margin: 20px auto;
+      background-color:#f7fad6;
+      border-radius: 70% 20% /120px 40% 230px 200px;
     }
 
     h1 {
       text-align: center;
+      font-family: "canada-type-gibson", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 70px;
+      margin-top: 30px;
     }
 
     h2 {
       text-align: center;
-      padding: 12px;
+      padding: 6px;
       font-size: 18px;
     }
 
@@ -36,32 +49,40 @@
       display: block;
       margin: 0 auto;
       max-width: 100%;
-      padding: 20px;
-      border-radius: 4px;
+      padding: 8px;
+      border-radius: 20px;
     }
 
     p {
       line-height: 1.8;
       font-size: 14px;
-      margin: 15px 60px 15px 60px;
+      margin: 20px 90px 5px 90px;
+    }
+
+    #link-wiki {
+      margin: 5px 90px;
     }
 
     button {
       display: block;
       margin: 0 auto;
-      background-color: #C2C2C2;
+      background-color: transparent;
       color: #000;
       font-size: 18px;
       padding: 15px 30px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      border: 2px solid #e1e4bf;
+      border-bottom-width: 4px;
+      font-family: "canada-type-gibson", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      text-transform: uppercase;
     }
 
     button:hover {
       opacity: 0.9;
       cursor: pointer;
-      transition: all 200ms ease-in-out;;
+      transition: all 400ms ease-in-out;
+      background-color: #e1e4bf;
     }
 
 
@@ -103,15 +124,15 @@
 <body>
   
   <div class="container">
-    <h1>fuji x100v 📸</h1>
-    <h2>my new obsession</h2>
+    <h1>fuji x100v</h1>
+    <h2>my new 📸 obsession</h2>
 
-    <img src="https://images.squarespace-cdn.com/content/v1/545012a9e4b0988576f6b699/1600447102383-JFCIWE56CZKDGNH0NGO8/fujifilm-x100v-review.jpg?format=750w" alt="Fuji x100v Camera" width="600px">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/504/original/fujifilm-x100v.jpg?1683818760" alt="Fuji x100v Camera" width="600px">
 
-    <p>The Fujifilm X100V (Roman Numeral "Fifth"), announced on February 4, 2020, is the successor to the Fujifilm X100F.[37] It features a redesigned lens, a fourth generation X-Trans sensor, a 2-way tilting rear LCD screen, and partial weather resistance.[b] The camera also includes additional film simulation modes and other software improvements. The X100V is $100 more expensive than its predecessor, the X100F. With its redesigned lens system, it was found to exhibit less distortion than the previous X100 cameras and has an improved close focus performance.[38]</p>
-    <p><a href="https://en.wikipedia.org/wiki/Fujifilm_X100" target="_blank">Learn more on Wikipedia</a></p>
+    <p>The Fujifilm X100V (Roman Numeral "Fifth"), announced on February 4, 2020, is the successor to the Fujifilm X100F.[37] It features a redesigned lens, a fourth generation X-Trans sensor, a 2-way tilting rear LCD screen, and partial weather resistance.[b] The camera also includes additional film simulation modes and other software improvements.</p>
+    <p id="link-wiki"><a href="https://en.wikipedia.org/wiki/Fujifilm_X100" target="_blank" alt="fuji x100v camera">Learn more on Wikipedia</a></p>
 
-    <button class="buy-button">👉 buy it</button>
+    <button class="buy-button">you want it?</button>
 
     <footer>
       <p>💻 coded by </p>
