@@ -111,7 +111,7 @@
     <p>The Fujifilm X100V (Roman Numeral "Fifth"), announced on February 4, 2020, is the successor to the Fujifilm X100F.[37] It features a redesigned lens, a fourth generation X-Trans sensor, a 2-way tilting rear LCD screen, and partial weather resistance.[b] The camera also includes additional film simulation modes and other software improvements. The X100V is $100 more expensive than its predecessor, the X100F. With its redesigned lens system, it was found to exhibit less distortion than the previous X100 cameras and has an improved close focus performance.[38]</p>
     <p><a href="https://en.wikipedia.org/wiki/Fujifilm_X100" target="_blank">Learn more on Wikipedia</a></p>
 
-    <button>👉 buy it</button>
+    <button class="buy-button">👉 buy it</button>
 
     <footer>
       <p>💻 coded by </p>
@@ -121,6 +121,17 @@
     </footer>
 
   </div>
+
+  <script>
+    let buyButton = document.querySelector(".buy-button");
+    buyButton.addEventListener("click", function() {
+      let name = prompt("What is your name?");
+      let email = prompt("What is your email address?");
+      let emoji = prompt("What is your favorite emoji?");
+
+      alert(`Thank you, ${name}! We'll be in touch by email, meanwhile take a lot of shots with your phone! ${emoji}`);
+    });
+  </script>
 </body>
 
 </html>
