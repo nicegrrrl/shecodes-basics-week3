@@ -19,15 +19,26 @@
 			font-family: "clone-rounded-latin", sans-serif;
 			font-weight: 400;
 			font-style: normal;
+      background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+      height: 100vh;
+      display: flex;
 		}
 
     .container {
       max-width: 800px;
-      height: 86vh;
-      max-height: 60%;
-      margin: 20px auto;
-      background-color:#f7fad6;
+      margin: 0 auto;
+    }
+
+    .main-content {
       border-radius: 70% 20% /120px 40% 230px 200px;
+      background-color:#fcfdf0;
+      padding-bottom: 20px;
+    }
+
+    hr {
+      width: 150px;
+      margin: 0 auto;
+      border: 1px solid rgba(255,192,203, 0.3);
     }
 
     h1 {
@@ -81,6 +92,7 @@
       font-weight: 500;
       font-style: normal;
       text-transform: uppercase;
+      box-shadow: 2px 2px 3px #b7b7b7;
     }
 
     button:hover {
@@ -92,13 +104,26 @@
 
     footer {
       text-align: center;
-      margin: 30px 20px 30px 20px;
+      margin: 10px;
     }
 
     .devAlana {
       font-family: "bimbo-pro-jumbo", sans-serif;
       font-weight: 500;
       font-size: 18px;
+    }
+
+    .iconFooter {
+      color: #ff47a9;
+    }
+
+    #alana-maia {
+      border: none;
+    }
+
+    #alana-maia:hover {
+      background-color: transparent;
+      color: #82CD47;
     }
 
     a {
@@ -120,19 +145,6 @@
       color: #F6FFDE;
     }
 
-    .iconFooter {
-      color: #ff47a9;
-    }
-
-    #alana-maia {
-      border: none;
-    }
-
-    #alana-maia:hover {
-      background-color: transparent;
-      color: #82CD47;
-    }
-
   </style>
 
 </head>
@@ -140,19 +152,24 @@
 <body>
   
   <div class="container">
-    <h1>fuji x100v</h1>
-    <h2>my new 📸 obsession</h2>
+    <div class="main-content">
+      <h1>fuji x100v</h1>
+      <h2>my new 📸 obsession</h2>
 
-    <figure>
-      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/504/original/fujifilm-x100v.jpg?1683818760" alt="Fuji x100v Camera" width="600px">
-      <figcaption><em>credits</em>: photo by <a href="https://www.5050travelog.com/camera-and-lens-reviews/fujifilm-x100v-camera-review" target="_blank">5050travelog</a></figcaption>
-    </figure>
-    
+      <hr>
+      <br>
 
-    <p>The Fujifilm X100V (Roman Numeral "Fifth"), announced on February 4, 2020, is the successor to the Fujifilm X100F.[37] It features a redesigned lens, a fourth generation X-Trans sensor, a 2-way tilting rear LCD screen, and partial weather resistance.[b] The camera also includes additional film simulation modes and other software improvements.</p>
-    <p id="link-wiki"><a href="https://en.wikipedia.org/wiki/Fujifilm_X100" target="_blank" alt="fuji x100v camera">Learn more on Wikipedia</a></p>
+      <figure>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/504/original/fujifilm-x100v.jpg?1683818760" alt="Fuji x100v Camera" width="600px">
+        <figcaption><strong>credits</strong>: photo by <a href="https://www.5050travelog.com/camera-and-lens-reviews/fujifilm-x100v-camera-review" target="_blank">5050travelog</a></figcaption>
+      </figure>
 
-    <button class="buy-button">you want it?</button>
+      <p>The <em>Fujifilm X100V</em> (Roman Numeral "Fifth"), announced on February 4, 2020, is the successor to the Fujifilm X100F. It features a redesigned lens, a fourth generation X-Trans sensor, a 2-way tilting rear LCD screen, and partial weather resistance. The camera also includes additional <span>film simulation modes</span> and other software improvements.</p>
+      <p id="link-wiki"><a href="https://en.wikipedia.org/wiki/Fujifilm_X100" target="_blank" alt="fuji x100v camera">Learn more on Wikipedia</a></p>
+
+      <button class="buy-button">you want it?</button>
+
+    </div>
 
     <footer>
       <p>💻 coded by </p>
@@ -170,7 +187,12 @@
       let email = prompt("What is your email address?");
       let emoji = prompt("What is your favorite emoji?");
 
-      alert(`Thank you, ${name}! We'll be in touch by email, meanwhile take a lot of shots with your phone! ${emoji}`);
+      if (!name == "" &&
+          !email == "" &&
+          !emoji == ""
+      ) {
+        alert(`Thank you, ${name}! We'll be in touch by email, meanwhile take a lot of shots with your phone! ${emoji}`);
+      }
     });
   </script>
 </body>
